@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Mission - Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-logo">SmartTech</div>
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#mission">Mission</a></li>
+      <li><a href="#features">Focus Areas</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero" id="mission">
+    <div class="container">
+      <h1>Our Mission</h1>
+      <p>Empowering a better world through innovation and intelligence.</p>
+      <a href="#contact" class="cta-button">Get in Touch</a>
+    </div>
+  </header>
+
+  <section class="features" id="features">
+    <div class="feature">
+      <i class="fas fa-shield-alt"></i>
+      <h2>Security</h2>
+      <p>Cutting-edge solutions to protect lives, properties, and digital assets.</p>
+    </div>
+
+    <div class="feature">
+      <i class="fas fa-user-shield"></i>
+      <h2>Safety</h2>
+      <p>Creating safer environments at home, in business, and in communities.</p>
+    </div>
+
+    <div class="feature">
+      <i class="fas fa-comments"></i>
+      <h2>Communication</h2>
+      <p>Building seamless networks for effortless interaction and data sharing.</p>
+    </div>
+
+    <div class="feature">
+      <i class="fas fa-bolt"></i>
+      <h2>Energy</h2>
+      <p>Delivering sustainable, smart energy solutions for the future.</p>
+    </div>
+
+    <div class="feature">
+      <i class="fas fa-home"></i>
+      <h2>Smart Automation</h2>
+      <p>Transforming lives with intelligent automation for comfort and control.</p>
+    </div>
+  </section>
+
+  <section class="aim" id="aim" style="padding: 60px 20px; background-color: #fff; text-align: center;">
+    <div class="container" style="max-width: 800px; margin: 0 auto;">
+      <h2 style="color: #0057b8; font-size: 2em; margin-bottom: 20px;">SECURITY & MAN</h2>
+      <p style="font-size: 1.1em; margin-bottom: 30px;">
+        Many individuals and organizations have security with <strong>LEVITY</strong> and they have paid <strong>HEAVILY</strong> for it.
+      </p>
+      <h3 style="font-size: 1.5em; margin-bottom: 15px;">Our Aim</h3>
+      <p style="font-size: 1.1em; margin-bottom: 20px;">
+        Our aim is to secure every home, school, government organization, and industry with new technology such as:
+      </p>
+      <ul style="text-align: left; margin: 0 auto; display: inline-block; font-size: 1.05em; line-height: 1.7;">
+        <li>Close Circuit Television (CCTV)</li>
+        <li>Smart Automation System</li>
+        <li>Panic Alarm System</li>
+        <li>Fire Suppression System</li>
+        <li>Communication System</li>
+        <li>Energy Solutions</li>
+        <li>Electronic Thunder and Lightning Arrestor</li>
+        <li>Nemtek Electric Fence Wire</li>
+        <li>Addressable & Conventional Fire Alarm Systems</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Want to work with us? Let's talk!</p>
+      <a href="mailto:your@email.com" class="cta-button">Send an Email</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Royalmax Protection. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+        });
+      });
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
