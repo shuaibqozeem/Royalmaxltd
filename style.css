@@ -203,4 +203,13 @@ grid-template-columns: auto auto;
   cursor: pointer;
   border-radius: 5px;
 }
+@media (max-width: 768px){
+    .images{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .nav-links{
+        display: none;
+    }
+}
 
