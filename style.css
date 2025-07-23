@@ -13,6 +13,17 @@
       padding: 0;
       box-sizing: border-box;
     }
+    .navigation{
+      text-align: center;
+      position: fixed;
+      height: 80px;
+      background-color: white;
+      width: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .navigation h3{
+      color: #111;
+    }
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -40,7 +51,7 @@
       background-position: center;
       color: var(--white);
       text-align: center;
-      position: relative;
+      /* position: relative; */
     }
 
     .hero .overlay {
@@ -102,48 +113,6 @@
   cursor: pointer;
 }
 
-/* Lightbox arrows */
-/* .lightbox .prev,
-.lightbox .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  font-size: 40px;
-  padding: 10px;
-  color: #fff;
-  font-weight: bold;
-  transform: translateY(-50%);
-  user-select: none;
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 50%;
-} */
-
-/* .lightbox .prev {
-  left: 30px;
-}
-.lightbox .next {
-  right: 30px;
-} */
-
-/* .why-us .content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 0 20px;
-}
-
-.why-us img {
-  flex: 1 1 calc(33.33% - 40px);
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  object-fit: cover;
-} */
-
-
     .service-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -178,7 +147,7 @@
     .gallery-grid img {
       width: 100%;
       border-radius: 8px;
-      object-fit: cover;
+      /* object-fit: cover; */
     }
 
     .gallery-grid figure {
@@ -206,7 +175,7 @@
       background-position: center;
       color: var(--white);
       text-align: center;
-      position: relative;
+      /* position: relative; */
     }
 
     .cta .overlay {
