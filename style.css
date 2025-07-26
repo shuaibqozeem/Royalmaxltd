@@ -14,15 +14,17 @@
       box-sizing: border-box;
     }
     .navigation{
-      text-align: center;
       position: fixed;
       height: 80px;
       background-color: white;
       width: 100%;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      /* display: flex; */
     }
     .navigation h3{
-      color: #111;
+      color: var(--primary);
+      text-align: center;
+
     }
 
     body {
