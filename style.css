@@ -23,16 +23,18 @@
     }
     .navigation h3{
       color: var(--primary);
-      margin-top: 10px;
+      margin-top: -50px;
       padding-left: 50px;
       /* text-align: center; */
 
     }
     .navs {
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-left: 400px;
+    margin-top: 30px;
     gap: 30px;
     }
 
@@ -182,6 +184,37 @@
       margin: 0;
       text-align: center;
     }
+    /* Lightbox */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lightbox-content {
+  max-width: 90%;
+  max-height: 80%;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+.close, .prev, .next {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
 
     .locations {
       display: grid;
@@ -245,6 +278,7 @@
       height: 50px;
     }
     /* Hamburger Base Styles */
+/* Hamburger Base Styles */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -271,18 +305,36 @@
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 80px;
+    top: 80px; /* Adjust if your header is shorter */
     right: 0;
-    width: 100%;
+    width: 50%;
+    height: 800%;
     background-color: white;
-    text-align: center;
+    /* text-align: center; */
     gap: 20px;
     padding: 20px 0;
-    z-index: 1000;
+    margin-top: -45px;
+    /* z-index: 1000; */
   }
 
   .navs.show {
     display: flex;
+  }
+  
+  .navs ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .navs ul li {
+    /* margin: 0; */
+    margin-top: -80px;
+  }
+  
+  .navs a {
+    font-size: 18px;
+    color: var(--primary);
+    display: block;
   }
 
   .hamburger {
@@ -291,18 +343,10 @@
 
   .navigation h3 {
     padding-left: 20px;
-  }
-
-  .navs a {
-    font-size: 18px;
-    color: var(--primary);
+    margin-top: 15px;
   }
 }
 
-
-    ul li {
-      margin-bottom: 10px;
-    }
     .slider {
   position: relative;
   width: 100%;

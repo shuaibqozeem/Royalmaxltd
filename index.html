@@ -8,19 +8,16 @@
 </head>
 <body>
   <div class="navigation">
-    <div class="navs">
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <div class="navs" id="navs">
       <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
-    <div class="hamburger">
-     &#9776;
-    </div>
-
     <h3>Welcome to Royal <strong>Max</strong><br>Protection Ltd</h3>
   </div>
   <!-- Hero Section -->
@@ -175,6 +172,7 @@
       <img src="image/certified-customer8.jpeg" alt="Customer 8" class="lightbox-img" />
       
     </div>
+    
     <ul>
       <li>🏙️ Offices: Abuja, Ibadan & Kaduna</li>
       <li>🔧 Trained & Certified Engineers</li>
@@ -185,10 +183,15 @@
   </div>
 </section>
 
-<!-- Lightbox Modal -->
-<div id="lightbox" class="lightbox">
-  <img id="lightbox-img" class="lightbox-content" />
-</div>
+  <!-- Lightbox Modal (only once) -->
+  <div id="lightbox" class="lightbox" style="display: none;">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" />
+    <div class="controls">
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+    </div>
+  </div>
 
 
   <!-- Project Highlights / Gallery -->
