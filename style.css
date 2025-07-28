@@ -339,6 +339,7 @@
 
   .hamburger {
     display: flex;
+    margin-top: 20px;
   }
 
   .navigation h3 {
