@@ -55,4 +55,10 @@
       if (e.key === 'Escape') closeBtn.click();
     }
   });
+    const hamburger = document.querySelector('.hamburger');
+  const navs = document.querySelector('.navs');
+
+  hamburger.addEventListener('click', () => {
+    navs.classList.toggle('show');
+  });
 

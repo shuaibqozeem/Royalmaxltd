@@ -23,9 +23,36 @@
     }
     .navigation h3{
       color: var(--primary);
-      text-align: center;
+      margin-top: 10px;
+      padding-left: 50px;
+      /* text-align: center; */
 
     }
+    .navs {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    }
+
+    .navs.show {
+    display: flex;
+    }
+
+    .navs ul{
+      display: flex;  
+      gap: 40px;  
+    }
+    .navs a{
+      text-decoration: none;
+      color: black;
+      font-size: large;
+    }
+    .navs a:hover{
+      color: #0056b3;
+    }
+    
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -217,6 +244,61 @@
     .logo {
       height: 50px;
     }
+    /* Hamburger Base Styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  z-index: 1001;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 100%;
+  background: var(--primary);
+  border-radius: 2px;
+}
+
+/* Mobile Nav Styling */
+@media (max-width: 768px) {
+  .navs {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    gap: 20px;
+    padding: 20px 0;
+    z-index: 1000;
+  }
+
+  .navs.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navigation h3 {
+    padding-left: 20px;
+  }
+
+  .navs a {
+    font-size: 18px;
+    color: var(--primary);
+  }
+}
+
 
     ul li {
       margin-bottom: 10px;
