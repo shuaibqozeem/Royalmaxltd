@@ -24,10 +24,13 @@
     .navigation h4{
       color: black;
       font-weight: bold;
-      text-align: center;
-      /* margin-top: -50px; */
-      /* padding-left: 50px; */
       /* text-align: center; */
+      /* text-align: center; */
+      
+    }
+    .nav-logo{
+      padding-left: 50px;
+      margin-top: -40px;
 
     }
     .navs {
@@ -317,6 +320,12 @@
     padding: 20px 0;
     margin-top: -10px;
     /* z-index: 1000; */
+  }
+  .nav-logo{
+    /* text-align: center; */
+    /* margin-left: 0; */
+    margin-top: 0;
+    font-weight: normal;
   }
 
   .navs.show {
