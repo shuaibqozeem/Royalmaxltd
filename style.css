@@ -21,10 +21,12 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       /* display: flex; */
     }
-    .navigation h3{
-      color: var(--primary);
-      margin-top: -50px;
-      padding-left: 50px;
+    .navigation h4{
+      color: black;
+      font-weight: bold;
+      text-align: center;
+      /* margin-top: -50px; */
+      /* padding-left: 50px; */
       /* text-align: center; */
 
     }
